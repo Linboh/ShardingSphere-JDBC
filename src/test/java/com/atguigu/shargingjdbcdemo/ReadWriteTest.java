@@ -29,6 +29,7 @@ public class ReadWriteTest {
 
     /**
      * 读写分离：事务测试
+     * 为了保证主从库间的事务一致性，避免跨服务的分布式事务，ShardingSphere-JDBC的`主从模型中，事务中的数据读写均用主库`。
      */
     @Transactional//开启事务
     @Test
@@ -44,6 +45,10 @@ public class ReadWriteTest {
 
     /**
      * 读写分离：负载均衡测试
+     *  ROUND_ROBIN（轮询）
+     * RANDOM（随机）
+     * WEIGHT（加权随机）
+     *
      */
     @Test
     public void testSelectAll(){
