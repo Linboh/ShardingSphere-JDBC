@@ -92,14 +92,14 @@ public class ShardingTest {
     @Test
     public void testInsertOrderTableStrategy(){
 
-        for (long i = 1; i < 5; i++) {
-
-            Order order = new Order();
-            order.setOrderNo("ATGUIGU" + i);
-            order.setUserId(1L);
-            order.setAmount(new BigDecimal(100));
-            orderMapper.insert(order);
-        }
+//        for (long i = 1; i < 5; i++) {
+//
+//            Order order = new Order();
+//            order.setOrderNo("ATGUIGU" + i);
+//            order.setUserId(1L);
+//            order.setAmount(new BigDecimal(100));
+//            orderMapper.insert(order);
+//        }
 
         for (long i = 5; i < 9; i++) {
 
