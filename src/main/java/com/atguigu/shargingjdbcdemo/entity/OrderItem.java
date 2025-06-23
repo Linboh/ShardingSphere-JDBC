@@ -11,7 +11,7 @@ import java.math.BigDecimal;
 @Data
 public class OrderItem {
     //当配置了shardingsphere-jdbc的分布式序列时，自动使用shardingsphere-jdbc的分布式序列
-    @TableId(type = IdType.AUTO)
+    @TableId(type = IdType.ASSIGN_ID)
     private Long id;
     private String orderNo;
     private Long userId;

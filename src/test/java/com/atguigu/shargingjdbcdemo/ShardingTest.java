@@ -171,22 +171,22 @@ public class ShardingTest {
             }
         }
 
-        for (long i = 5; i < 9; i++) {
-
-            Order order = new Order();
-            order.setOrderNo("ATGUIGU" + i);
-            order.setUserId(2L);
-            orderMapper.insert(order);
-
-            for (int j = 0; j < 3; j++) {
-                OrderItem orderItem = new OrderItem();
-                orderItem.setOrderNo("ATGUIGU" + i);
-                orderItem.setUserId(2L);
-                orderItem.setPrice(new BigDecimal(3));
-                orderItem.setCount(3);
-                orderItemMapper.insert(orderItem);
-            }
-        }
+//        for (long i = 5; i < 9; i++) {
+//
+//            Order order = new Order();
+//            order.setOrderNo("ATGUIGU" + i);
+//            order.setUserId(2L);
+//            orderMapper.insert(order);
+//
+//            for (int j = 0; j < 3; j++) {
+//                OrderItem orderItem = new OrderItem();
+//                orderItem.setOrderNo("ATGUIGU" + i);
+//                orderItem.setUserId(2L);
+//                orderItem.setPrice(new BigDecimal(3));
+//                orderItem.setCount(3);
+//                orderItemMapper.insert(orderItem);
+//            }
+//        }
     }
 
 
