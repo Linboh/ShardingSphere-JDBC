@@ -211,7 +211,9 @@ public class ShardingTest {
         dictMapper.insert(dict);
     }
 
-
+    /**
+     * 广播表：查询测试
+     */
     @Test
     public void testSelectBroadcast(){
 
